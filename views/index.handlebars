@@ -4,12 +4,12 @@
   <img src="https://drive.google.com/thumbnail?id=1PaMuWQDxtSUSkzOjrvHRM6jfGsGspBdO" alt="sample-burger" width="300" height="250"> 
 
   <div class="row">
-  <h2 class="heads-left">Burgers that have not been eaten</h2>
+  <h2 class="heads-left">Burgers that have not been devoured</h2>
 
   <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
+      {{> burgers/burger-block notdevour=true}}
     {{/unless}}
   {{/each}}
   </ul>
@@ -19,7 +19,7 @@
   <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
+      {{> burgers/burger-block notdevour=false}}
     {{/if}}
   {{/each}}
   </ul>
@@ -32,13 +32,13 @@
 
   <div class="form-group">
     <label for="burger">Burger Name:</label>
-    <input type="text" id="bu" name="burger_name" size="80">
+    <input type="text" id="burger" burger_name="burger_name" size="80">
   </div>
 
   <div class="form-group">
     <label for="devoured">Devour it?</label><br>
     <input type="radio" name="devoured" value="1" checked> Yes, devour!<br>
-    <input type="radio" name="devour" value="0"> No, think of your diet!
+    <input type="radio" name="notdevour" value="0"> No, think of your diet!
   </div>
 
   <button type="submit">Add Burger</button>
