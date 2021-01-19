@@ -15,7 +15,7 @@ USE burgers_db;
 CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	burger_name varchar(80) NOT NULL,
+	burger_name varchar(80),
 	devoured BOOLEAN DEFAULT false
 );
 
