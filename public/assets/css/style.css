@@ -1,9 +1,17 @@
-body {
+body { 
   color: blueviolet;
   font-family: sans-serif;
   font-weight: bolder;
   background-color: thistle ;
   text-align: center;
+}
+
+#title {
+  margin-top: 45px;
+}
+
+.heads {
+  margin-top: 15px;
 }
 
 li {
