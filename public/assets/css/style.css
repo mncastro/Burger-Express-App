@@ -1,6 +1,14 @@
+body {
+  color: blueviolet;
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: thistle ;
+  text-align: center;
+}
+
 li {
-  padding: 5px;
-  margin: 5px;
+  padding: 20px;
+  margin: 20px;
   background: #faebd7;
 }
 
